@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: install dependency
-        run: sudo apt -y install libssh-dev musl musl-dev musl-tools
+        run: sudo apt -y install libssh-dev musl musl-dev musl-tools python2
       - name: Get current date
         id: datetime
         run: echo "now=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
